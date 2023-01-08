@@ -1,0 +1,108 @@
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* GENERAL STYLES */
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(./svgs/Sound\ Wave.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fefefe;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: #2a2a2ae6;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  transition: all ease 1s;
+}
+
+button:hover {
+  background: #cd4b4b;
+}
+
+/* HEADER SECTION */
+.header {
+  padding: 1rem;
+}
+
+.header--logo {
+  font-size: clamp(1.5rem, 4.5vw, 2.1rem);
+}
+
+.header--h1 {
+  font-size: clamp(1.3rem, 5.5vw, 2.5rem);
+  margin-top: 3rem;
+  text-align: center;
+}
+
+/* MAIN SECTION */
+.main {
+  padding: 1rem 10rem;
+  height: 70vh;
+}
+
+.main--container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.main--container textarea {
+  font-size: clamp(1rem, 3.5vw, 1.7rem);
+  font-weight: bold;
+  overflow: hidden;
+  outline: none;
+  padding: 0.5rem;
+}
+
+/* FOOTER SECTION */
+.footer {
+  background-color: #2f2e2e;
+  bottom: 0;
+  padding: 0.5rem;
+  position: fixed;
+  width: 100vw;
+}
+
+.footer--h2 {
+  text-align: center;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 769px) {
+  .main {
+    padding: 1rem 4rem;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  body {
+    background-image: url(./svgs/Sound\ Wave1.svg);
+  }
+  .main {
+    padding: 1rem 2rem;
+  }
+}
